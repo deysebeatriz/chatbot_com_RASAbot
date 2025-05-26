@@ -1,13 +1,27 @@
 version: "3.1"
 
 rules:
-
-- rule: Say goodbye anytime the user says goodbye
+- rule: Responder qual o diferencial
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
+    - intent: diferencial
+    - action: utter_diferencial
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: Responder se tem certificado
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+    - intent: certificado
+    - action: utter_certificado
+
+- rule: Responder sobre trilhas
+  steps:
+    - intent: mais_de_uma_trilha
+    - action: utter_mais_de_uma_trilha
+
+- rule: Responder o tempo de acesso
+  steps:
+    - intent: tempo_acesso
+    - action: utter_tempo_acesso
+
+- rule: Responder módulos individuais
+  steps:
+    - intent: modulos
+    - action: utter_modulos

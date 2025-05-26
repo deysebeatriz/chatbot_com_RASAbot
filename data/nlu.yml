@@ -1,91 +1,44 @@
 version: "3.1"
 
 nlu:
-- intent: greet
+- intent: diferencial
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - Qual o diferencial do TIC em trilhas em relação às outras plataformas de ensino?
+    - Qual o diferencial do TIC em trilhas?
+    - Por que escolher TIC em trilhas?
+    - Em que o TIC em trilhas é melhor?
+    - Por que o TIC em trilhas é melhor que os outros?
 
-- intent: goodbye
+- intent: certificado
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - As trilhas possuem certificado de conclusão?
+    - As trilhas têm certificado?
+    - Tem certificado?
+    - Eu recebo certificado no final?
+    - Como funciona o certificado?
+    - Ganha certificado ao terminar a trilha?
 
-- intent: affirm
+- intent: mais_de_uma_trilha
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - Posso cursar mais de uma trilha ao mesmo tempo?
+    - Posso fazer outras trilhas?
+    - Dá pra fazer mais de uma trilha?
+    - Eu posso me inscrever em várias trilhas?
+    - Dá pra estudar mais de uma trilha?
 
-- intent: deny
+- intent: tempo_acesso
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - Por quanto tempo terei acesso às aulas?
+    - Quanto tempo terei acesso?
+    - Até quando posso assistir às aulas?
+    - Por quanto tempo posso acessar?
+    - Quando perco o acesso?
 
-- intent: mood_great
+- intent: modulos
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - Preciso realizar todos os módulos da trilha ou posso escolher apenas um deles?
+    - Posso fazer só um módulo?
+    - Dá para escolher um módulo específico?
+    - Tenho que fazer todos os módulos?
+    - Posso pular módulos?
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?

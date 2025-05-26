@@ -1,91 +1,37 @@
-#### This file contains tests to evaluate that your bot behaves as expected.
-#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+version: "3.1"
+test_stories:
 
-stories:
-- story: happy path 1
+- story: Teste diferencial do TIC em trilhas
   steps:
-  - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+    - user: |
+        Qual o diferencial do TIC em trilhas?
+      intent: perguntar_diferencial
+    - action: utter_diferencial
 
-- story: happy path 2
+- story: Teste certificado das trilhas
   steps:
-  - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+    - user: |
+        As trilhas têm certificado?
+      intent: perguntar_certificado
+    - action: utter_certificado
 
-- story: sad path 1
+- story: Teste múltiplas trilhas
   steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
+    - user: |
+        Posso fazer várias trilhas ao mesmo tempo?
+      intent: perguntar_varias_trilhas
+    - action: utter_varias_trilhas
 
-- story: sad path 2
+- story: Teste tempo de acesso
   steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
+    - user: |
+        Por quanto tempo terei acesso às aulas?
+      intent: perguntar_tempo_acesso
+    - action: utter_tempo_acesso
 
-- story: sad path 3
+- story: Teste módulos individuais
   steps:
-  - user: |
-      hi
-    intent: greet
-  - action: utter_greet
-  - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
-
-- story: say goodbye
-  steps:
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
-
-- story: bot challenge
-  steps:
-  - user: |
-      are you a bot?
-    intent: bot_challenge
-  - action: utter_iamabot
+    - user: |
+        Posso escolher apenas um módulo?
+      intent: perguntar_modulos_individuais
+    - action: utter_modulos_individuais

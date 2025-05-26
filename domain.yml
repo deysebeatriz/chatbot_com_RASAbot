@@ -1,30 +1,28 @@
 version: "3.1"
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - diferencial
+  - certificado
+  - mais_de_uma_trilha
+  - tempo_acesso
+  - modulos
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
+  utter_diferencial:
+  - text: "Além de 100% gratuitas, as trilhas contam com conteúdos de instituições renomadas, metodologias ativas de aprendizagem e apoio de mentores. São pensadas com base nas vagas do mercado para garantir sua empregabilidade.
+"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_certificado:
+  - text: "Sim! Você recebe um badge a cada módulo concluído e um certificado final ao concluir toda a trilha."
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_mais_de_uma_trilha:
+  - text: "Sim, é possível cursar mais de uma trilha ao mesmo tempo. Você poderá se inscrever em quantas trilhas desejar. É importante atentar-se, no caso de trilhas com aulas ao vivo, que esses horários não coincidam."
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_tempo_acesso:
+  - text: "Após a finalização da trilha, você terá acesso por mais um mês."
 
-  utter_goodbye:
-  - text: "Bye"
+  utter_modulos:
+  - text: "Cada trilha foi planejada para desenvolver competências em uma carreira, seguindo uma sequência lógica de conhecimentos, portanto não é possível selecionar individualmente módulos para estudo."
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
